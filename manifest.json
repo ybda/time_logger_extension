@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "Time Logger",
+  "version": "1.0",
+  "description": "Logs time from specific URLs",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["*://www.timeanddate.com/worldclock/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
